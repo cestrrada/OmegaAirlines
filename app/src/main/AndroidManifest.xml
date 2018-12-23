@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.caestrada.omega">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/omega_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/omega_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/OmegaNoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".SignIn"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OmegaActivity"
+            android:label="@string/title_home"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name=".Search.SearchResults"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Logs.LogViewerActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/transactions_title"
+            android:theme="@style/OmegaNoActionBar" />
+        <activity android:name=".FlightManager.FlightManager"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FlightManager.AddFlight"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

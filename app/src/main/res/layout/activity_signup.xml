@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_margins"
+        android:layout_marginTop="@dimen/view_margins_wide"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:text="@string/create_account"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/create_description"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_account"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="@dimen/view_margins"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/rewards_club"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/create_username_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_description"
+        android:layout_alignStart="@+id/create_username"
+        android:layout_marginTop="@dimen/view_margins"
+        android:text="@string/hint_username"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/create_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_username_title"
+        android:layout_marginStart="@dimen/view_margins"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:ems="10"
+        android:hint="@string/hint_username"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/opaqueWhite" />
+
+    <TextView
+        android:id="@+id/create_password_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_username"
+        android:layout_marginTop="@dimen/view_margins"
+        android:layout_alignStart="@+id/create_account"
+        android:text="@string/hint_password"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/create_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_password_title"
+        android:layout_marginStart="@dimen/view_margins"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/opaqueWhite" />
+
+    <TextView
+        android:id="@+id/create_confirm_password_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_password"
+        android:layout_alignStart="@+id/create_account"
+        android:layout_marginTop="@dimen/view_margins"
+        android:text="@string/hint_confirm_password"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/create_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_confirm_password_title"
+        android:layout_marginStart="@dimen/view_margins"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="@string/hint_confirm_password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/opaqueWhite" />
+
+    <Button
+        android:id="@+id/create_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_confirm_password"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="@dimen/view_margins"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:background="@drawable/light_button"
+        android:text="@string/sign_up"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

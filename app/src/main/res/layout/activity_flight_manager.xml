@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlightManager.FlightManager">
+
+    <TextView
+        android:id="@+id/manager_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_margins"
+        android:layout_marginTop="@dimen/view_margins"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:text="@string/manager_title"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/manager_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manager_title"
+        android:layout_alignStart="@+id/manager_title"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:text="@string/manager_description"
+        android:textColor="@color/opaqueWhite" />
+
+    <TextView
+        android:id="@+id/manager_no_flights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manager_description"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/view_margins"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:text="@string/manager_no_flights"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/opaqueWhite" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/manage_add_flight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:layout_marginBottom="@dimen/view_margins"
+        android:clickable="true"
+        app:backgroundTint="@color/colorAccent"
+        app:elevation="5dp"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_add" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/manage_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/manager_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/view_margins"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/manage_flight_card" >
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

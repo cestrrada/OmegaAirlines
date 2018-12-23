@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="@dimen/view_margins_narrow"
+        android:paddingRight="@dimen/view_margins_narrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+  <android.support.v7.widget.CardView
+      android:id="@+id/flight_card"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:id="@+id/flight_card_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <LinearLayout
+          android:id="@+id/flight_card_top"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/flight_flight_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:text="@string/flight_flight_id"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/flight_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:text="@string/flight_date"
+            android:textAlignment="textEnd" />
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/flight_departure_code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/flight_card_top"
+          android:layout_alignParentStart="true"
+          android:layout_marginStart="@dimen/view_margins"
+          android:layout_marginTop="15dp"
+          android:text="@string/flight_departure_code"
+          android:textColor="@color/colorPrimaryDark"
+          android:textSize="36sp" />
+
+      <TextView
+          android:id="@+id/flight_departure_city"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/flight_departure_code"
+          android:layout_alignStart="@+id/flight_departure_code"
+          android:layout_marginStart="0dp"
+          android:layout_marginTop="0dp"
+          android:text="@string/flight_departure_city"
+          android:textAlignment="viewStart" />
+
+      <ImageView
+          android:id="@+id/flight_airplane_icon"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/flight_departure_code"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="20dp"
+          android:adjustViewBounds="true"
+          android:minWidth="40dp"
+          android:minHeight="40dp"
+          android:rotation="90"
+          android:scaleType="fitCenter"
+          android:tint="@color/colorPrimaryDark"
+          app:srcCompat="@drawable/ic_flight_24dp" />
+
+      <TextView
+          android:id="@+id/flight_arrival_code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/flight_card_top"
+          android:layout_alignParentEnd="true"
+          android:layout_marginTop="15dp"
+          android:layout_marginEnd="@dimen/view_margins"
+          android:text="@string/flight_arrival_code"
+          android:textAlignment="viewEnd"
+          android:textColor="@color/colorPrimaryDark"
+          android:textSize="36sp" />
+
+      <TextView
+          android:id="@+id/flight_arrival_city"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/flight_arrival_code"
+          android:layout_alignEnd="@+id/flight_arrival_code"
+          android:layout_marginTop="0dp"
+          android:layout_marginEnd="0dp"
+          android:text="@string/flight_arrival_city"
+          android:textAlignment="viewEnd" />
+
+      <TextView
+          android:id="@+id/flight_departure_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/flight_departure_city"
+          android:layout_alignStart="@+id/flight_departure_city"
+          android:layout_marginStart="0dp"
+          android:layout_marginTop="0dp"
+          android:text="@string/flight_boarding_time" />
+
+      <TextView
+          android:id="@+id/flight_arrival_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/flight_arrival_city"
+          android:layout_alignEnd="@+id/flight_arrival_city"
+          android:layout_marginStart="0dp"
+          android:layout_marginTop="0dp"
+          android:text="@string/flight_arrival_time" />
+
+      <View
+          android:id="@+id/flight_info_divider"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_below="@+id/flight_airplane_icon"
+          android:layout_marginLeft="@dimen/view_margins"
+          android:layout_marginTop="50dp"
+          android:layout_marginRight="@dimen/view_margins"
+          android:background="#32000000"
+          android:gravity="center_horizontal" />
+
+      <TextView
+          android:id="@+id/flight_seats_count"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/flight_info_divider"
+          android:layout_alignEnd="@+id/flight_info_divider"
+          android:layout_marginTop="15dp"
+          android:text="@string/flight_passengers_count"
+          android:textAlignment="textEnd"
+          android:textAllCaps="true"
+          android:textColor="@color/colorAccentDark"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/flight_passengers_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/flight_info_divider"
+          android:layout_marginTop="15dp"
+          android:layout_marginEnd="5dp"
+          android:layout_toStartOf="@+id/flight_seats_count"
+          android:gravity="center_horizontal"
+          android:text="@string/flight_passengers_title"
+          android:textAllCaps="true"
+          android:textColor="@color/colorPrimaryDark"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/flight_price"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/flight_seats_count"
+          android:layout_alignEnd="@+id/flight_seats_count"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="0dp"
+          android:text="@string/flight_price_tag"
+          android:textAlignment="textEnd"
+          android:textAllCaps="true"
+          android:textColor="@color/colorAccentDark"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/flight_price_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/flight_price"
+          android:layout_marginStart="0dp"
+          android:layout_marginTop="15dp"
+          android:layout_marginEnd="5dp"
+          android:layout_marginBottom="0dp"
+          android:layout_toStartOf="@+id/flight_price"
+          android:gravity="center_horizontal"
+          android:text="@string/flight_price_title"
+          android:textAllCaps="true"
+          android:textColor="@color/colorPrimaryDark"
+          android:textStyle="bold" />
+
+      <Button
+          android:id="@+id/flight_cancel_button"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_below="@+id/flight_price_title"
+          android:layout_centerHorizontal="true"
+          android:layout_marginLeft="@dimen/view_margins"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="@dimen/view_margins"
+          android:layout_marginBottom="15dp"
+          android:background="@drawable/accent_button"
+          android:elevation="2dp"
+          android:text="@string/flight_cancel"
+          android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+  </android.support.v7.widget.CardView>
+</LinearLayout>

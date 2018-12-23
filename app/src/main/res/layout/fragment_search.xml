@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search.SearchFragment">
+
+    <RelativeLayout
+        android:id="@+id/search_card_container"
+        android:layout_width="match_parent"
+        android:layout_below="@id/search_description"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_margins_narrow"
+            android:layout_marginTop="@dimen/view_margins"
+            android:layout_marginEnd="@dimen/view_margins_narrow"
+            app:cardCornerRadius="5dp"
+            android:paddingBottom="@dimen/view_margins">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/search_description">
+
+                <TextView
+                    android:id="@+id/search_departure_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/view_margins"
+                    android:layout_marginTop="@dimen/view_margins"
+                    android:text="@string/search_departure"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/search_departure_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/search_departure_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/view_margins"
+                    android:layout_marginEnd="@dimen/view_margins"
+                    android:hint="@string/search_departure"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/opaqueBlack" />
+
+                <TextView
+                    android:id="@+id/search_arrival_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/search_departure_input"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/view_margins"
+                    android:layout_marginEnd="@dimen/view_margins"
+                    android:layout_marginTop="@dimen/view_margins"
+                    android:text="@string/search_arrival"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/search_arrival_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/search_arrival_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/view_margins"
+                    android:layout_marginEnd="@dimen/view_margins"
+                    android:hint="@string/search_arrival"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/opaqueBlack" />
+
+                <TextView
+                    android:id="@+id/search_passengers_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/search_passenger_count"
+                    android:layout_marginStart="@dimen/view_margins"
+                    android:text="@string/flight_passengers_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/search_decrement"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/search_arrival_input"
+                    android:layout_marginTop="@dimen/view_margins"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toStartOf="@id/search_passenger_count"
+                    android:background="@drawable/primary_button"
+                    android:text="-"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/search_passenger_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/search_increment"
+                    android:layout_toStartOf="@+id/search_increment"
+                    android:text="@string/flight_passengers_count"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/search_increment"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/search_arrival_input"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/view_margins"
+                    android:layout_marginTop="@dimen/view_margins"
+                    android:layout_marginEnd="@dimen/view_margins"
+                    android:background="@drawable/primary_button"
+                    android:text="+"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/search_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/search_passengers_title"
+                    android:layout_marginStart="@dimen/view_margins"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="@dimen/view_margins"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/accent_button"
+                    android:text="@string/search_flights_button"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/search_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/view_margins"
+        android:layout_marginTop="@dimen/view_margins"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:text="@string/title_search"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/search_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_title"
+        android:layout_alignStart="@+id/search_title"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:text="@string/search_description"
+        android:textColor="@color/opaqueWhite" />
+
+</RelativeLayout>

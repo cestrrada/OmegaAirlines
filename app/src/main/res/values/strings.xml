@@ -1,0 +1,169 @@
+<resources>
+    <!-- Sign in / Sign up Activities -->
+    <string name="app_name">Omega Airlines</string>
+    <string name="app_tagline">Cheap in every way imaginable.</string>
+    <string name="welcome_text">Log into your account or create one below.</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="rewards_club">Join the <b>Omega Rewards Club</b> today and get 10
+        minutes of unsupervised access to the cockpit during your first flight!
+    </string>
+
+    <!-- Error Messages (SIGN IN) -->
+    <string name="failed_sign_in_username_empty">Please enter your username.</string>
+    <string name="failed_sign_in_invalid_username">Username does not exist.</string>
+    <string name="failed_sign_in_password_empty">Please enter a password.</string>
+    <string name="failed_sign_in_wrong_password">Username or password is incorrect.</string>
+
+    <!-- Error Messages (SIGN UP) -->
+    <string name="failed_sign_up_username_taken">Username is already taken.</string>
+    <string name="failed_sign_up_username_invalid">Username must contain at least 3 letters and 1 number.</string>
+    <string name="failed_sign_up_username_empty">Please enter a username.</string>
+    <string name="failed_sign_up_password_invalid">Passwords must contain at least 3 letters and 1 number.</string>
+    <string name="failed_sign_up_password_mismatch">Passwords do not match.</string>
+    <string name="failed_sign_in">The username or password you entered is incorrect. Please try again.</string>
+
+    <!-- General Errors -->
+    <string name="failed_password_empty">Please enter your password.</string>
+    <string name="failed_password">The password you entered is incorrect. Please try again.</string>
+
+    <!-- Fragment Titles -->
+    <string name="title_home">Home</string>
+    <string name="title_reservations">Reservations</string>
+    <string name="title_search_long">Search Flights</string>
+    <string name="title_search">Search</string>
+
+    <!-- Home Fragment -->
+    <string name="home_greeting">Hello</string>
+    <string name="home_username">User</string>
+    <string name="home_signout">Sign Out</string>
+    <string name="home_rewards_club_title">Omega Rewards Club</string>
+    <string name="home_member_since">Member Since Dec 2018</string>
+    <string name="home_admin_description">Manage flights, spy on customers, and destroy the database
+        if you feel like it. Go nuts!
+    </string>
+    <string name="home_user_section_title">Get Started</string>
+    <string name="home_user_description">Select a tab from the navigation bar below to search for,
+        view, and manage reservations.
+    </string>
+    <string name="home_user_no_admin">Sorry, no administrative privileges for you.</string>
+
+    <string name="home_admin_settings">Admin Settings</string>
+    <string name="home_admin_manage_flights">Manage Flights</string>
+    <string name="home_admin_view_logs">View System Logs</string>
+
+    <!-- Reservations Fragment -->
+    <string name="reservations_description">View the details of your reservations here.
+    Flight cancellations incur a small 90% processing fee.</string>
+    <string name="flights_no_flights">You have no upcoming flights.</string>
+
+    <string name="flight_flight_id">Flight ID</string>
+    <string name="flight_date">January 1, 2018</string>
+
+    <string name="flight_departure_code">ABC</string>
+    <string name="flight_departure_city">Location ABC</string>
+    <string name="flight_arrival_code">XYZ</string>
+    <string name="flight_arrival_city">Location XYZ</string>
+
+    <string name="flight_boarding_time">12:00 AM</string>
+    <string name="flight_arrival_time">12:00 AM</string>
+
+    <string name="flight_price_title">Total Price</string>
+    <string name="flight_price_tag">$0.00</string>
+
+    <string name="flight_passengers_title">Passengers</string>
+    <string name="flight_passengers_count">0</string>
+
+    <string name="flight_cancel">Cancel Reservation</string>
+    <string name="flight_reservation_cancelled">Your reservation has been successfully cancelled.</string>
+    <string name="flight_cancellation_failed">This flight could not be cancelled.</string>
+
+    <!-- Search Fragment -->
+    <string name="search_description">To get started, enter your departure and arrival cities and
+    a passenger count.</string>
+
+    <string name="search_failed_ticket_limit">You can only reserve up to 7 tickets per flight.</string>
+
+    <string name="search_departure">Departure</string>
+    <string name="search_arrival">Arrival</string>
+    <string name="search_flights_button">Search Flights</string>
+
+    <string name="search_results">Search Results</string>
+    <string name="search_results_description">Showing results from <b>Location A</b> to
+        <b>Location B</b> for 1 passenger.</string>
+    <string name="results_no_results">Your search returned no results.\n\nPress the back button to
+        return to the search screen and try a different search.</string>
+    <string name="result_seats_title">Available Seats</string>
+    <string name="result_price">Price</string>
+
+    <string name="search_result_reserve">Book This Flight</string>
+    <string name="search_result_reserved">Reserved</string>
+    <string name="search_reservation_booked">Your reservation has been successfully booked.</string>
+    <string name="flight_reservation_failed">This flight could not be reserved.</string>
+
+    <!-- Log Viewer (ADMIN) -->
+    <string name="transactions_title">System Logs</string>
+    <string name="transactions_description">Spy on all of your users from account creation to flight
+    reservation.</string>
+    <string name="log_entry_date">January 1, 2018 12:34:56 PM</string>
+    <string name="log_entry_type_title">Transaction Type</string>
+    <string name="log_entry_type">Account Creation</string>
+    <string name="log_entry_status_title">Status</string>
+    <string name="log_entry_status">Success</string>
+    <string name="log_entry_user_title">User</string>
+    <string name="log_entry_user">username</string>
+    <string name="log_entry_flight_title">Flight ID</string>
+    <string name="log_entry_flight">FLY101</string>
+    <string name="log_entry_details_title">Details</string>
+    <string name="log_entry_details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+
+    <string name="log_type_sign_in">Sign In</string>
+    <string name="log_type_sign_out">Sign Out</string>
+    <string name="log_type_account_creation">Account Creation</string>
+    <string name="log_type_flight_creation">Flight Creation</string>
+    <string name="log_type_flight_deletion">Flight Deletion</string>
+    <string name="log_type_reservation_creation">Reservation Creation</string>
+    <string name="log_type_reservation_deletion">Reservation Cancellation</string>
+
+    <!-- Flight Manager (ADMIN) -->
+    <string name="manager_title">Flight Manager</string>
+    <string name="manager_description">Add and remove any flights from the database to your heart\'s content.</string>
+    <string name="manager_no_flights">There are currently no flights in the system. Add one below.</string>
+    <string name="manager_flight_cancelled">This flight has been successfully removed.</string>
+    <string name="manager_cancellation_failed">This flight could not be removed. Please try again.</string>
+
+    <string name="manage_remove_flight">Delete this Flight</string>
+    <string name="manage_seats_title">Seats Reserved</string>
+    <string name="manage_seats">1 of 20</string>
+    <string name="manage_price_title">Ticket Price</string>
+    <string name="manage_price">$0.00</string>
+
+    <!-- Add Flight (ADMIN) -->
+    <string name="add_title">New Flight</string>
+    <string name="add_description">Please fill out all of the flight\'s information below.</string>
+
+    <string name="add_flight_info_title">Flight Info</string>
+    <string name="add_flight_id">Flight ID</string>
+    <string name="add_ticket_price">Price</string>
+    <string name="add_flight_capacity">Capacity</string>
+    <string name="add_flight_departure_full">Departure</string>
+    <string name="add_flight_arrival_full">Arrival</string>
+    <string name="add_flight_code">Airport</string>
+    <string name="add_departure_date">Select Departure Date</string>
+    <string name="add_arrival_date">Select Arrival Date</string>
+    <string name="add_flight_finish">Add Flight</string>
+
+    <string name="add_flight_back_title">Cancel New Flight</string>
+    <string name="add_flight_back_description">Are you sure you want to cancel adding this flight?
+        Any unsaved data will be lost.</string>
+
+    <string name="add_flight_success">Flight has been successfully added.</string>
+    <string name="add_flight_fail_empty_fields">The flight could not be added. Please fill out all
+    fields above.</string>
+    <string name="add_flight_fail_duplicate">A flight with this ID already exists.</string>
+    <string name="add_flight_fail_date">The departure date is after the arrival date.</string>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/view_margins">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="0dp"
+        android:background="#28000000" />
+
+    <TextView
+        android:id="@+id/log_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_margins"
+        android:layout_marginTop="@dimen/view_margins"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:text="@string/log_entry_date" />
+
+    <TextView
+        android:id="@+id/log_type_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_date"
+        android:layout_alignStart="@+id/log_date"
+        android:layout_marginTop="@dimen/view_margins_narrow"
+        android:text="@string/log_entry_type_title"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/log_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_type_title"
+        android:layout_alignStart="@+id/log_type_title"
+        android:text="@string/log_entry_type" />
+
+    <TextView
+        android:id="@+id/log_status_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:layout_alignBaseline="@id/log_type_title"
+        android:text="@string/log_entry_status_title"
+        android:textAlignment="textEnd"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/log_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_status_title"
+        android:layout_alignEnd="@+id/log_status_title"
+        android:text="@string/log_entry_status"
+        android:textAlignment="textEnd"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/log_user_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_type"
+        android:layout_alignStart="@+id/log_type"
+        android:layout_marginTop="@dimen/view_margins_narrow"
+        android:text="@string/log_entry_user_title"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/log_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_user_title"
+        android:layout_alignStart="@+id/log_user_title"
+        android:text="@string/log_entry_user" />
+
+    <TextView
+        android:id="@+id/log_flight_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/log_user_title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:text="@string/log_entry_flight_title"
+        android:textAlignment="textEnd"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/log_flight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_flight_title"
+        android:layout_alignEnd="@+id/log_flight_title"
+        android:text="@string/log_entry_flight"
+        android:textAlignment="textEnd"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/log_details_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_user"
+        android:layout_alignStart="@+id/log_date"
+        android:layout_marginTop="@dimen/view_margins_narrow"
+        android:text="@string/log_entry_details_title"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccentDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/log_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log_details_title"
+        android:layout_alignStart="@+id/log_date"
+        android:layout_marginEnd="@dimen/view_margins"
+        android:text="@string/log_entry_details" />
+
+</RelativeLayout>
